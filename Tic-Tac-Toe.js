@@ -53,20 +53,22 @@ function winner(){
             cnt2.textContent++;
         }
     }
-    let b = 1;
-    for(let i=1;i<=9;i++){
-        if(arr[i].textContent == i){
-            b = 0;
-            break;
+    else{
+        let b = 1;
+        for(let i=1;i<=9;i++){
+            if(arr[i].textContent == i){
+                b = 0;
+                break;
+            }
         }
-    }
-    if(b){
-        container.style.display = "none";
-        p.style.display = "none";
-        p2.style.display = "block";
-        restart.style.display = "block";
-        const win = document.getElementById("t2"); 
-        win.textContent = 'Draw';
+        if(b){
+            container.style.display = "none";
+            p.style.display = "none";
+            p2.style.display = "block";
+            restart.style.display = "block";
+            const win = document.getElementById("t2"); 
+            win.textContent = 'Draw';
+        }
     }
 }
 
