@@ -74,6 +74,8 @@ function winner(){
     function c1(){
         if(cheked[1] == 1)return;
         cheked[1] = 1;
+        arr[1].style.backgroundColor = "rgba(167, 167, 167, 0.97)";
+        arr[1].style.color = "red";
         if(turn.textContent == 'player1'){
             arr[1].textContent = 'X';
             winner();
@@ -89,6 +91,8 @@ function winner(){
     function c2(){
         if(cheked[2] == 1)return;
         cheked[2] = 1;
+        arr[2].style.backgroundColor = "rgba(167, 167, 167, 0.97)";
+        arr[2].style.color = "red";
         if(turn.textContent == 'player1'){
             arr[2].textContent = 'X';
             winner();
@@ -103,6 +107,8 @@ function winner(){
     function c3(){
         if(cheked[3] == 1)return;
         cheked[3] = 1;
+        arr[3].style.backgroundColor = "rgba(167, 167, 167, 0.97)";
+        arr[3].style.color = "red";
         if(turn.textContent == 'player1'){
             arr[3].textContent = 'X';
             winner();
@@ -117,6 +123,8 @@ function winner(){
     function c4(){
         if(cheked[4] == 1)return;
         cheked[4] = 1;
+        arr[4].style.backgroundColor = "rgba(167, 167, 167, 0.97)";
+        arr[4].style.color = "red";
         if(turn.textContent == 'player1'){
             arr[4].textContent = 'X';
             winner();
@@ -131,6 +139,8 @@ function winner(){
     function c5(){
         if(cheked[5] == 1)return;
         cheked[5] = 1;
+        arr[5].style.backgroundColor = "rgba(167, 167, 167, 0.97)";
+        arr[5].style.color = "red";
         if(turn.textContent == 'player1'){
             arr[5].textContent = 'X';
             winner();
@@ -145,6 +155,8 @@ function winner(){
     function c6(){
         if(cheked[6] == 1)return;
         cheked[6] = 1;
+        arr[6].style.backgroundColor = "rgba(167, 167, 167, 0.97)";
+        arr[6].style.color = "red";
         if(turn.textContent == 'player1'){
             arr[6].textContent = 'X';
             winner();
@@ -160,6 +172,8 @@ function winner(){
     function c7(){
         if(cheked[7] == 1)return;
         cheked[7] = 1;
+        arr[7].style.backgroundColor = "rgba(167, 167, 167, 0.97)";
+        arr[7].style.color = "red";
         if(turn.textContent == 'player1'){
             arr[7].textContent = 'X';
             winner();
@@ -175,6 +189,8 @@ function winner(){
     function c8(){
         if(cheked[8] == 1)return;
         cheked[8] = 1;
+        arr[8].style.backgroundColor = "rgba(167, 167, 167, 0.97)";
+        arr[8].style.color = "red";
         if(turn.textContent == 'player1'){
             arr[8].textContent = 'X';
             winner();
@@ -190,6 +206,8 @@ function winner(){
     function c9(){
         if(cheked[9] == 1)return;
         cheked[9] = 1;
+        arr[9].style.backgroundColor = "rgba(167, 167, 167, 0.97)";
+        arr[9].style.color = "red";
         if(turn.textContent == 'player1'){
             arr[9].textContent = 'X';
             winner();
@@ -209,6 +227,10 @@ function res(){
     p2.style.display = "none";
     restart.style.display = "none";
     cheked = [0,0,0,0,0,0,0,0,0,0];
+    for(let i=1;i<=9;i++){
+        arr[i].style.backgroundColor = "rgb(87, 87, 87)";
+        arr[i].style.color = "white";
+    }
     container.style.display = "grid";
     for(let i=1;i<=9;i++){
         arr[i].textContent = i;
